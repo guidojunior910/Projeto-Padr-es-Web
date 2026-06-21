@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React em 9 tópicos</title>
+    <link rel="stylesheet" href="Projeto.css">
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>React em 9 tópicos</h1>
+            <p>Um guia visual e objetivo sobre a biblioteca React, explicando seus conceitos, história, vantagens, desvantagens, curiosidades, exemplos e conclusão.</p>
+        </header>
+
+        <nav class="top-nav" aria-label="Navegação principal">
+            <ul>
+                <li><a class="nav-link" href="#topic-1">O que é</a></li>
+                <li><a class="nav-link" href="#topic-2">Introdução</a></li>
+                <li><a class="nav-link" href="#topic-3">História</a></li>
+                <li><a class="nav-link" href="#topic-4">Importância</a></li>
+                <li><a class="nav-link" href="#topic-5">Vantagens</a></li>
+                <li><a class="nav-link" href="#topic-6">Desvantagens</a></li>
+                <li><a class="nav-link" href="#topic-7">Curiosidades</a></li>
+                <li><a class="nav-link" href="#topic-8">Exemplos</a></li>
+                <li><a class="nav-link" href="#topic-9">Conclusão</a></li>
+            </ul>
+        </nav>
+
+        <section class="intro">
+            <article class="card" id="topic-1">
+                <h2>1. O que é React?</h2>
+                <p>React é uma biblioteca JavaScript criada pelo Facebook para construir interfaces de usuário de forma declarativa e eficiente. Ela permite criar componentes reutilizáveis que atualizam a página automaticamente quando os dados mudam.</p>
+                <p>React também ajuda a separar a interface em pequenas partes independentes, chamadas componentes, o que torna o desenvolvimento mais organizado.</p>
+            </article>
+
+            <article class="card" id="topic-2">
+                <h2>2. Introdução</h2>
+                <p>React introduz a ideia de componentes como blocos independentes de interface, onde cada um controla sua própria lógica e aparência. Isso facilita a construção de aplicações escaláveis e com manutenção mais simples.</p>
+                <p>O React usa JSX, que permite escrever elementos HTML diretamente dentro do JavaScript, deixando o código mais legível e próximo do que será renderizado.</p>
+            </article>
+
+            <article class="card" id="topic-3">
+                <h2>3. História</h2>
+                <p>React foi lançado em 2013 pelo Facebook. Desde então, cresceu rapidamente e se tornou uma das bibliotecas mais populares do ecossistema JavaScript, usada por grandes empresas e projetos ao redor do mundo.</p>
+                <p>O projeto começou como uma solução interna para problemas de desempenho no Facebook e no Instagram e, depois, foi liberado como código aberto.</p>
+            </article>
+
+            <article class="card" id="topic-4">
+                <h2>4. Importância</h2>
+                <p>A importância do React está em sua capacidade de melhorar a experiência do desenvolvedor e do usuário. O uso de um DOM virtual e o fluxo de dados previsível tornam as interfaces mais rápidas e confiáveis.</p>
+                <p>React permite criar aplicações web e mobile usando o mesmo conceito de componentes, com bibliotecas como React Native.</p>
+            </article>
+
+            <article class="card" id="topic-5">
+                <h2>5. Vantagens</h2>
+                <ul>
+                    <li>Componentes reutilizáveis que reduzem duplicação de código.</li>
+                    <li>Renderização rápida graças ao DOM virtual.</li>
+                    <li>Grande comunidade e ecossistema de ferramentas.</li>
+                    <li>Fácil integração com bibliotecas e frameworks modernos.</li>
+                    <li>Melhor organização de código com componentes e hooks.</li>
+                </ul>
+            </article>
+
+            <article class="card" id="topic-6">
+                <h2>6. Desvantagens</h2>
+                <ul>
+                    <li>Curva de aprendizado para novos conceitos como JSX e hooks.</li>
+                    <li>Necessidade de configuração adicional para projetos maiores.</li>
+                    <li>Atualizações frequentes podem exigir ajustes no código.</li>
+                    <li>Pode ser exagerado para sites simples que não precisam de muita interatividade.</li>
+                </ul>
+            </article>
+
+            <article class="card" id="topic-7">
+                <h2>7. Curiosidades</h2>
+                <p>React nasceu de uma necessidade interna no Facebook para lidar com interfaces complexas. Muitos desenvolvedores conhecem React por seus hooks, introduzidos em 2019, que simplificaram o gerenciamento de estado em componentes funcionais.</p>
+                <div class="extra-info hidden" id="extra-curiosidades">
+                    <p>Além do Facebook, empresas como Netflix, Airbnb, Uber e WhatsApp usam React. A biblioteca também inspirou outros projetos como Vue e Solid pela maneira declarativa de construir interfaces.</p>
+                </div>
+                <button class="toggle-button" data-target="extra-curiosidades" data-show="Mostrar mais curiosidades" data-hide="Ocultar curiosidades">Mostrar mais curiosidades</button>
+            </article>
+
+            <article class="card" id="topic-8">
+                <h2>8. Exemplos</h2>
+                <p>Um exemplo comum de React é a criação de um componente de botão que atualiza um contador. Cada vez que o estado muda, o React atualiza apenas o que é necessário na página, mantendo a interface rápida.</p>
+                <div class="extra-info hidden" id="extra-exemplos">
+                    <pre><code>function Contador() {
+  const [count, setCount] = React.useState(0);
+
+  return (
+    &lt;button onClick={() =&gt; setCount(count + 1)}&gt;
+      Contador: {count}
+    &lt;/button&gt;
+  );
+}</code></pre>
+                </div>
+                <button class="toggle-button" data-target="extra-exemplos" data-show="Mostrar código de exemplo" data-hide="Ocultar código de exemplo">Mostrar código de exemplo</button>
+            </article>
+
+            <article class="card" id="topic-9">
+                <h2>9. Conclusão</h2>
+                <p>React é uma biblioteca poderosa para construir interfaces modernas. Seu foco em componentes e atualização eficiente de DOM torna-o uma escolha popular para aplicações web escaláveis.</p>
+                <p>Mesmo com algumas desvantagens, seus benefícios em produtividade e performance fazem do React uma ferramenta essencial para muitos desenvolvedores web.</p>
+            </article>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <p>Aprenda React com uma estrutura clara, interativa e visual.</p>
+                <p>Use os links acima para navegar entre os tópicos ou role a página para explorar cada seção.</p>
+            </div>
+            <div class="footer-bottom">
+                <span>© <span id="year"></span> React em 9 tópicos</span>
+                <a href="#top">Voltar ao topo</a>
+            </div>
+        </footer>
+    </div>
+    <script src="Projeto.js"></script>
+</body>
+</html>
